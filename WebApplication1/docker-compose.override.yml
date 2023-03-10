@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  webapplication1:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  webapplication2:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development     
+  nginx:
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf

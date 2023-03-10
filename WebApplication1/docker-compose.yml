@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  webapplication1:
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile     
+  webapplication2:
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
+  
+  nginx:
+    image: nginx:alpine
+    links:
+      - webapplication1
+      - webapplication2
