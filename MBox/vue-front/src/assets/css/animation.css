@@ -1,0 +1,26 @@
+.search button::before{
+    content:"\f002";
+}
+
+.linkCenter::selection {
+    background-color: wheat;
+    color: orangered;
+}
+
+.dropdown-content a:hover {background-color: #202020; color: gray;}
+.dropdown:hover .dropdown-content {display: block; padding: 15px; margin-right: 60px;}
+.dropdown:hover .dropbutton {background-color: #3e8e41;}
+
+.LeftPanel::-webkit-scrollbar {
+    width: 1px;               /* ширина всей полосы прокрутки */
+    border: 3px solid black;
+}
+.MainCentralContent::-webkit-scrollbar{
+    width:1px;
+    border: 3px solid red;
+}
+
+body::-webkit-scrollbar {
+    width: 1px;               /* ширина всей полосы прокрутки */
+    height: 1px;
+}

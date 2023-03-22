@@ -1,0 +1,367 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+html {
+height: 100%;
+}
+
+body {
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(154deg, #000000, #170d3f, #000000);
+    background-size: 600% 600%;
+    animation: AnimationName 20s ease infinite;
+}
+
+.block-main-background {
+}
+
+@keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+hr {
+    border: 0.5px solid #202020;
+    margin: 5px;
+}
+
+.navLeft {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Logo {
+    padding:20px;
+    width:100px;
+}
+
+.MainContentItems {
+  display: flex;
+  flex-direction: row;
+  width: 2100px;
+  height: auto;
+}
+
+.LeftPanel {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: flex-start;
+    overflow: auto;
+    padding-top: 3px;
+    min-width: 5%;
+    width:15%;
+    height: auto;
+    box-shadow: 5px 5px 15px darkslateblue;
+    border-bottom-right-radius: 10px;
+}
+
+#IconLeftPanel {
+    border-radius: 10px ;
+    vertical-align: middle;
+    width: 15%;
+    margin-right: 15px;
+}
+
+.TopContentColumn {
+    height: 70px;
+    width: auto;
+}
+
+.TopContent {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+.TopChildContent {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+
+}
+
+.Navigator {
+    margin-top: 11px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.LeftPanelContext {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    height:auto;
+}
+
+.block-link-top-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.MainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.MainCentralContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+
+}
+
+.Contents {
+    width:200px;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.Bio {
+    position:relative;
+    padding: 10px;
+    right: 25px;
+}
+
+#AvatarContent {
+    border-radius: 220px;
+    width:150px;
+    height:150px;
+    box-shadow: 1px 1px 1px black ;
+}
+
+#icons {
+    width:25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#imgBand {
+    width: 40px;
+    height: 40px;
+}
+
+#imgDropdownPhoto {
+    border-radius: 30px;
+
+    width: 15%;
+    height: 15%;
+}
+
+#textLeft {
+    padding-left: 5px;
+}
+
+.MainCentralContent {
+    display: block;
+    overflow:visible;
+}
+
+.CentralContent {
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    width: 100%;
+    height: auto;
+}
+
+.Subscribe {
+    display:flex;
+    flex-direction: column;
+    padding-top: 15px;
+    overflow: auto;
+}
+
+.Follower {
+    display:flex;
+    flex-direction: column;
+    padding-top: 15px;
+    overflow: auto;
+}
+
+.AudioPlayer {
+    padding-right: 16px;
+    height: 111px;
+}
+.personPhoto {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    max-width: 100%;
+}
+
+.Avatar {
+    display: inline-block;
+}
+
+#link {
+    width:15px;
+    height: 15px;
+}
+
+/* Header */
+
+.block-header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+
+.block-header-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.block-searching {
+    width: 290px;
+    height: 55px;
+}
+
+.block-input-search {
+    position: relative;
+    background-color: transparent;
+    color: wheat;
+    padding: 15px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 40px;
+    width: 260px;
+}
+
+.block-header-drop {
+    margin-left: 26px;
+    margin-top: 10px;
+}
+
+.dropdown {
+    display: block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right:-70px;
+    background-color:#141312;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropbutton {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+}
+
+/* Header */
+
+/* Profile */
+
+.block-container {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.block-flex {
+    display: flex;
+}
+
+.block-logo {
+    width: 300px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.block-info {
+    width: 195px;
+    height: 100px;
+    margin: 15px 0 0 15px;
+    padding: 5px;
+    position: relative;
+}
+
+.block-full-info-profile {
+}
+
+.img-logo-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    position: relative;
+}
+
+.block-background {
+    width: 99.4%;
+    height: 330px;
+}
+
+.image-background {
+    width: 100%;
+    height: 310px;
+    opacity: 0.6;
+    box-shadow: 0 0 20px darkgray;
+    border-radius: 20px;
+}
+
+
+.asd {
+    position: relative;
+}
+
+.block-profile-content {
+    width: 99%;
+    height: 100%;
+    border: 3px solid rgb(34, 33, 33);
+    margin: 10px;
+    padding: 10px;
+}
+
+.block-menu-profile-content {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(34, 33, 33);
+}
+
+/* Profile #101010 */

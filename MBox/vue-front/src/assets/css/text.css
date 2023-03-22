@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300&display=swap');
+
+.text-link {
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: indianred;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    color: orangered;
+}
+
+#ParagraphColor{
+    color:gainsboro;
+    text-align:center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+}
+
+#MainTextCentralContent
+{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+.Name {
+    font-size: 20px;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+
+
+#name {
+    display: inline;
+    color: white;
+    font-family: "Roboto","Arial",sans-serif;
+    left: 15px;
+}
+
+.li-link-left
+{
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 450;
+    font-size: 1rem;
+    color: gray;
+}
+
+.li-link-center{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify-all;
+}
+
+.li-link-center:hover .li-link-left:hover {
+    color: white;
+}
+
+.li-hover-block:hover {
+    color: white;
+    border-right: 1px solid orangered;
+}
+
+
+/* Profile */
+
+.text-info-1 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.text-name {
+    color: gainsboro;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.text-sub {
+    color: white;
+    font-size: 17px;
+    padding: 3px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.button-sub {
+    height: 55px;
+    background: transparent;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1.5px solid rgb(156, 90, 4);
+    border-radius: 20px;
+    transition: 1s ease-out;
+}
+
+.button-sub:hover {
+    transition: 1s ease-out;
+    border: transparent;
+    box-shadow: 1px 1px 10px orangered;
+    cursor: pointer;
+}
+
+.menu-item-prof-content {
+    color: gray;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 450;
+    font-size: 20px;
+    transition: 1s ease;
+}
+
+.menu-item-prof-content:hover {
+    color: aliceblue;
+    text-shadow: 1px 1px 5px orange;
+    transition: 500ms ease-in;
+    border-bottom: 1px solid orangered;
+}
+
+
+.carousel__track,.carousel__viewport{
+    height: 100%;
+}
+
+
+
+/* Profile */

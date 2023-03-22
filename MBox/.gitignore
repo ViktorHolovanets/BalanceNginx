@@ -1,0 +1,5 @@
+.env
+./cloud-storage/.env
+./vue-front/node_modules
+./mbox-laravel/vendor
+./.idea
