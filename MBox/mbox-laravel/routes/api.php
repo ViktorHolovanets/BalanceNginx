@@ -68,3 +68,6 @@ Route::get('login/facebook/callback', [\App\Http\Controllers\Auth\FacebookAuthCo
 Route::get('/notlogin',function (){
     return Error::unauthorized();
 })->name('login');
+
+
+Route::get('/test/socket/io', [\App\Http\Controllers\TestSocketIo::class,'index']);
