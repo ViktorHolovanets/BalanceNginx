@@ -143,7 +143,32 @@ services:
             - rabbit_network
         depends_on:
             -   db.cars
+    auth:
+        build: ./nodejs_jwt
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        volumes:
+            - ./nodejs_jwt:/usr/src/app
+        networks:
+            - rabbit_network
+        depends_on:
+            - redis
+            - rabbit.mq
+        expose:
+            - "3000"
+        environment:
+            - NAME=JWT_Auth
 
+    spring-boot-app:
+        build: ./cars_base
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        networks:
+            - rabbit_network
+        ports:
+            - "8080:8080"
+        depends_on:
+            - db.cars
 networks:
     rabbit_network:
         driver: bridge

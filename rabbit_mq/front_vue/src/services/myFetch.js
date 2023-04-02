@@ -5,8 +5,8 @@ export default function (url, options = {}) {
     return new Promise((resole, reject) => {
 
         // Настраиваю параметры запроса
-        // url = 'http://localhost/' + url
-        // console.log('+ Fetch +')
+         url = 'http://localhost/' + url
+        console.log(options)
         // console.log(url)
 
         fetch(url, options)

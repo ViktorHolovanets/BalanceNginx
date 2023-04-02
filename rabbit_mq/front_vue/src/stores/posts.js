@@ -7,6 +7,7 @@ import MySocketIo from "@/services/MySocketIo";
 export const usePostsStore = defineStore('post', {
     state: () => ({
         isLoaded: false,
+
         posts: []
     }),
     actions: {
@@ -25,21 +26,6 @@ export const usePostsStore = defineStore('post', {
                     myLocalStorage.setItem("posts", data)
                     this.isLoaded = true
                 })
-
-            // fetch('/nodejs-producer/test')
-            //     .then(response => {
-            //         if (response.status !== 200)
-            //             throw new {message: 'Status != 200'}
-            //         return response.json()
-            //     })
-            //     .then(data => {
-            //         this.posts = data
-            //         this.isLoaded = true
-            //     })
-            //     .catch(err=> {
-            //         console.log(err)
-            //         toast.error(err)
-            //     })
         },
 
         updatePosts(data) {
