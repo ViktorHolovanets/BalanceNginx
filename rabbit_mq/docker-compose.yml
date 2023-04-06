@@ -25,6 +25,7 @@ services:
             - socket.jonny
             - socket.sunny
             - rabbit.producer
+            - spring.boot.app
         ports:
             - "80:80"
 
@@ -159,14 +160,14 @@ services:
         environment:
             - NAME=JWT_Auth
 
-    spring-boot-app:
+    spring.boot.app:
         build: ./cars_base
         extra_hosts:
             - 'host.docker.internal:host-gateway'
-        networks:
-            - rabbit_network
         ports:
             - "8080:8080"
+        networks:
+            - rabbit_network
         depends_on:
             - db.cars
 networks:

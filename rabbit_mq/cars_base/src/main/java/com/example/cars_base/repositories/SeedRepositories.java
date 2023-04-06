@@ -1,6 +1,7 @@
 package com.example.cars_base.repositories;
 
 import com.example.cars_base.models.Generation;
+import com.example.cars_base.models.Mark;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -8,7 +9,13 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Collection;
 
-public interface SeedRepositories extends CrudRepository<Generation, String> {
+public interface SeedRepositories extends CrudRepository<Mark, String> {
+
+
+
+
+
+
 
     @Modifying
     @Query(value = "INSERT INTO `mark`(id, name, `cyrillic-name`,`popular`,`country`) VALUES" +
